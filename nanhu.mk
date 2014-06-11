@@ -58,9 +58,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
     $(LOCAL_PATH)/rootdir/system/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/init.bluetooth.sh:system/etc/init.bluetooth.sh
-
 # Device specific part for two-stage boot
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/bootrec-device:recovery/bootrec-device \
@@ -71,16 +68,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/tad:root/sbin/tad
 
 # Offline charging
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/prebuilt/charger:root/charger \
-#    $(LOCAL_PATH)/prebuilt/battery_fail.png:root/res/images/charger/battery_fail.png \
-#    $(LOCAL_PATH)/prebuilt/charging_animation_01.png:root/res/images/charger/charging_animation_01.png \
-#    $(LOCAL_PATH)/prebuilt/charging_animation_02.png:root/res/images/charger/charging_animation_02.png \
-#    $(LOCAL_PATH)/prebuilt/charging_animation_03.png:root/res/images/charger/charging_animation_03.png \
-#    $(LOCAL_PATH)/prebuilt/charging_animation_04.png:root/res/images/charger/charging_animation_04.png \
-#    $(LOCAL_PATH)/prebuilt/charging_animation_05.png:root/res/images/charger/charging_animation_05.png \
-#    $(LOCAL_PATH)/prebuilt/charging_animation_06.png:root/res/images/charger/charging_animation_06.png \
-#    $(LOCAL_PATH)/prebuilt/charging_animation_07.png:root/res/images/charger/charging_animation_07.png
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/charger:root/charger \
+    $(LOCAL_PATH)/prebuilt/battery_fail.png:root/res/images/charger/battery_fail.png \
+    $(LOCAL_PATH)/prebuilt/charging_animation_01.png:root/res/images/charger/charging_animation_01.png \
+    $(LOCAL_PATH)/prebuilt/charging_animation_02.png:root/res/images/charger/charging_animation_02.png \
+    $(LOCAL_PATH)/prebuilt/charging_animation_03.png:root/res/images/charger/charging_animation_03.png \
+    $(LOCAL_PATH)/prebuilt/charging_animation_04.png:root/res/images/charger/charging_animation_04.png \
+    $(LOCAL_PATH)/prebuilt/charging_animation_05.png:root/res/images/charger/charging_animation_05.png \
+    $(LOCAL_PATH)/prebuilt/charging_animation_06.png:root/res/images/charger/charging_animation_06.png \
+    $(LOCAL_PATH)/prebuilt/charging_animation_07.png:root/res/images/charger/charging_animation_07.png
 
 # Key layouts and touchscreen
 PRODUCT_COPY_FILES += \
