@@ -41,9 +41,6 @@ WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/ath6kl_sdio.ko"
 WIFI_DRIVER_MODULE_NAME := wlan
 WIFI_DRIVER_LOADER_DELAY := 1000000
 
-# Custom vibrator
-BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/sony/nanhu/vibrator/vibrator.c
-
 TARGET_OTA_ASSERT_DEVICE := C1504,C1505,C1604,C1605,nanhu,nanhu_ds
 
 #Low Ram Device
